@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+    <div id="background">
+        <h1 class="head">Chats</h1>
+        <a href="#"> <img class="note" src="note.png" alt=""></a>
+        <a href="#"> <img class="filter" src="sort.png" alt=""></a>
+        <input id="searchbar" onkeyup="search()" type="text" placeholder=" search or start a new chat">
+        <div class="chats first"> 
+            <img class="profile1" src="avatar.png" alt="">
+            <h2 class="name1">In House</h1>
+            <h4 class="time1">09:34</h4>
+            <h6 class="phn">9729936469</h6>
+            <p class="p1">Swadha:okkkk</p> 
+        </div>
+        <div class="chats second"> 
+            <img class="profile2" src="display-pic.png" alt="">
+            <h2 class="name2">Academic</h1>
+            <h4 class="time2">16-06-2024</h4>
+            <h6 class="phn">9812958816</h6>
+            <p class="p2">Himani:Haan ok</p>
+        </div>
+        <div class="chats third"> 
+            <img class="profile3" src="people.png" alt="">  
+            <h2 class="name3">B.Tech 2nd</h1>
+            <h4 class="time3">16-06-2024</h4>
+            <h6 class="phn">8860858212</h6>
+            <p class="p3">~InternsElite Education...</p>
+        </div>
+        
+        <div class="chats fourth"> 
+            <img class="profile4" src="user.png" alt="">
+            <h2 class="name4">Sec C</h1>
+            <h4 class="time4">15-06-2024</h4>
+            <h6 class="phn">7206647199</h6>
+            <p class="p4">~:Everyone fills....</p>
+        </div>
+        <div class="chats fifth"> 
+            <img class="profile5"  src="users.png" alt="">
+            <h2 class="name5">Wipro</h1>
+            <h4 class="time5">15-06-2024</h4>
+            <h6 class="phn">9518023015</h6>
+            <p class="p5">~Avani Tank:this is....</p>
+        </div>
+       
+    </div>
+    </center>
+    <script>
+        function search()
+        {   
+          var name=document.getElementById("searchbar").value
+          var chats =document.getElementsByClassName("chats")
+          i=0
+          while(i<chats.length) {
+            var head = chats[i].getElementsByTagName("h2")
+            var head2 = chats[i].getElementsByTagName("h6")
+            if(head[0].innerHTML.match(name)||head2[0].innerHTML.match(name))
+            {
+                chats[i].style.display="block"
+
+
+            }
+            else{
+                 chats[i].style.display="none"
+            }
+                 i=i+1
+          }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+#background{
+    height: 800px;
+    width: 500px;
+    border: 2px solid gray;
+    position: relative;
+    top:0px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+.head{
+    position: absolute;
+    left: 10px;
+    top: 0px;
+}
+.note{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 380px;
+    top: 20px;
+}
+.filter{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 440px;
+    top: 20px;
+}
+#searchbar{
+    border-radius: 10px;
+    height: 30px;
+    width: 450px;
+    position: absolute;
+    top: 90px;
+    left: 10px;
+}
+.first{
+    width: 100%;
+    height: 100px;
+    /*border: 2px solid black;*/
+    position: relative;
+    top: 150px;
+}
+.second{
+    width: 100%;
+    height: 100px;
+    /*border: 2px solid black;*/
+    position: relative;
+    top: 150px;
+}
+.third{
+    width: 100%;
+    height: 100px;
+    /*border: 2px solid black;*/
+    position: relative;
+    top: 150px;
+}
+.fourth{
+    width: 100%;
+    height: 100px;
+    /*border: 2px solid black;*/
+    position: relative;
+    top: 150px;
+}
+.fifth{
+    width: 100%;
+    height: 100px;
+   /*border: 2px solid black;*/
+    position: relative;
+    top: 150px;
+}
+.name1{
+    font-size: 30px;
+    font-weight: bolder;
+    color: black;
+    position: absolute;
+    left: 80px;
+    top: 0px;
+}
+.name2{
+    font-size: 30px;
+    font-weight: bolder;
+    color: black;
+    position: absolute;
+    left: 80px;
+    top: 0px;
+}
+.name3{
+    font-size: 30px;
+    font-weight: bolder;
+    color: black;
+    position: absolute;
+    left: 80px;
+    top: 0px;
+}
+.name4{
+    font-size: 30px;
+    font-weight: bolder;
+    color: black;
+    position: absolute;
+    left: 80px;
+    top: 0px;
+}
+.name5{
+    font-size: 30px;
+    font-weight: bolder;
+    color: black;
+    position: absolute;
+    left: 80px;
+    top: 0px;
+}
+.profile1{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    top: 30px;
+}
+.profile2{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    top: 30px;
+}
+.profile3{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    top: 30px;
+}
+.profile4{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    top: 30px;
+}
+.profile5{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    top: 30px;
+}
+.time1{
+    font-size: 15px;
+    font-weight: lighter;
+    color: gray;
+    position: absolute;
+    left: 400px;
+    top: 0px;
+}
+.time2{
+    font-size: 15px;
+    font-weight: lighter;
+    color: gray;
+    position: absolute;
+    left: 400px;
+    top: 0px;
+}
+.time3{
+    font-size: 15px;
+    font-weight: lighter;
+    color: gray;
+    position: absolute;
+    left: 400px;
+    top: 0px;
+}
+.time4{
+    font-size: 15px;
+    font-weight: lighter;
+    color: gray;
+    position: absolute;
+    left: 400px;
+    top: 0px;
+}
+.time5{
+    font-size: 15px;
+    font-weight: lighter;
+    color: gray;
+    position: absolute;
+    left: 400px;
+    top: 0px;
+}
+.phn{
+    font-size: 20px;
+    color: gray;
+    position: absolute;
+    left: 80px;
+    top: 7px;
+
+}
+.p1{
+    font-size: 15px; 
+    font-weight: lighter;
+    color: gray;
+    position: absolute;
+    left: 80px;
+    top: 60px;
+}
+.p2{
+    font-size: 15px; 
+    font-weight: lighter;
+    color: gray;
+    position: absolute;
+    left: 80px;
+    top: 60px;
+}
+.p3{
+    font-size: 15px; 
+    font-weight: lighter;
+    color: gray;
+    position: absolute;
+    left: 80px;
+    top: 60px;
+}
+.p4{
+    font-size: 15px; 
+    font-weight: lighter;
+    color: gray;
+    position: absolute;
+    left: 80px;
+    top: 60px;
+}
+.p5{
+    font-size: 15px; 
+    font-weight: lighter;
+    color: gray;
+    position: absolute;
+    left: 80px;
+    top: 60px;
+}

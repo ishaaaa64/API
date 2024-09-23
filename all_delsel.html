@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="txtName" placeholder="Enter Name:"> <br>
+    <input type="text" id="txtPhone" placeholder="Enter Phone:"> <br>
+    <input type="text" id="txtAddress" placeholder="Enter Address:"> <br>
+    <button onclick="set()">Set</button>
+    <button onclick="mdel()">Multi Delete</button>
+    <table border="2">
+        <thead>
+            <th>
+                <input onclick="setAll()" type="checkbox" id="chk">
+                Select
+            </th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th>Operation</th>
+        </thead>
+        <tbody id="bdy">
+
+        </tbody>
+    </table>
+    <script>
+
+         function mdel()
+         {
+                var tbody=document.getElementById("bdy")
+                 var rows=tbody.getElementsByTagName("tr")
+                 i=0
+                 while(i<=rows.length-1)
+                 {
+                     
+                     if(rows[i].childNodes[0].childNodes[0].checked==true)
+                     {
+                        rows[i].style.display="none"
+                     }
+                    i=i+1
+                 }
+         }
+        function setAll() {
+            if(document.getElementById("chk").checked==true)
+            {
+                 var tbody=document.getElementById("bdy")
+                 var rows=tbody.getElementsByTagName("tr")
+                 i=0
+                 while(i<=rows.length-1)
+                 {
+                     
+                     rows[i].childNodes[0].childNodes[0].checked=true
+                    i=i+1                                                                                       
+                 }
+            }
+            else{
+                var tbody=document.getElementById("bdy")
+                 var rows=tbody.getElementsByTagName("tr")
+                 i=0
+                 while(i<=rows.length-1)
+                 { 
+                     
+                     rows[i].childNodes[0].childNodes[0].checked=false
+                    i=i+1
+                 }
+            }
+        }
+
+        function set() {
+            var name = document.getElementById("txtName").value
+            var phone = document.getElementById("txtPhone").value
+            var address = document.getElementById("txtAddress").value
+
+            var row = document.createElement("tr")
+
+            var cell = document.createElement("td")
+            var cell1 = document.createElement("td")
+            var cell2 = document.createElement("td")
+            var cell3 = document.createElement("td")
+            var cell4 = document.createElement("td")
+
+            var inpSelect = document.createElement("input")
+            inpSelect.type = "checkbox"
+            cell.append(inpSelect)
+
+            cell1.innerHTML = name
+            cell2.innerHTML = phone
+            cell3.innerHTML = address
+
+            var btnDelete = document.createElement("button")
+            btnDelete.innerHTML = "Delete"
+            btnDelete.setAttribute("onclick", "del(this)")
+
+            cell4.append(btnDelete)
+
+            row.append(cell)
+            row.append(cell1)
+            row.append(cell2)
+            row.append(cell3)
+            row.append(cell4)
+            document.getElementById("bdy").append(row)
+        }
+           
+        function del(OButton) {
+            OButton.parentNode.parentNode.style.display = "none"
+            //  var td=OButton.parentNode
+            //  var row=td.parentNode
+            //  row.style.display="none"
+        }
+    </script>
+</body>
+
+</html>
